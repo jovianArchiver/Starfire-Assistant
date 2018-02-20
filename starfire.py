@@ -127,7 +127,7 @@ def generate_rei(planet):
         return None
 
     if roll == 1:
-        rei = 'Very Poor'
+        rei = 'V.Poor'
     elif roll in [2, 3]:
         rei = 'Poor'
     elif roll in [4, 5, 6, 7]:
@@ -135,7 +135,7 @@ def generate_rei(planet):
     elif roll in [8, 9]:
         rei = 'Rich'
     else:
-        rei = 'Very Rich'
+        rei = 'V.Rich'
 
     return rei
 
@@ -157,7 +157,7 @@ def generate_orbits_planets(star, binary = None):
             maxdist = 200
 
     while orbits[-1] < maxdist:
-        orbits.append(orbits[-1]+difference*pow(2, len(orbits)-1))
+        orbits.append(orbits[-1]+difference*pow(2, len(orbits)-2))
 
     del orbits[-1]
     return orbits
@@ -228,6 +228,9 @@ def generate_list_moons(planet, mass):
 
 # Generates the planets that orbit a given star. If distance_binary is an integer, creates the planets as orbiting a component in a binary, given the distance. Returns a dictionary.
 def generate_list_planets(star, binary = None):
+    if star in ['Blue Giant', 'White Dwarf', 'Red Giant']:
+        return None
+
     planets = []
 
     planet_orbits = generate_orbits_planets(star, binary)
@@ -243,26 +246,30 @@ def generate_list_planets(star, binary = None):
         else:
             planets.append({'orbit': planet_orbits[planet], 'bearing': generate_bearing(), 'type': planet_type, 'rei': generate_rei(planet_type), 'tide_lock': False, 'moons': generate_list_moons(planet_type, planet_mass)})
 
+    for p in range(len(planets)-1, 1, -1):
+        if planets[p]['type'] == 'G' and random.randint(1, 10) < 7:
+            planets[p-1] = {'orbit': planet_orbits[p-1], 'bearing': 'N/A', 'type': 'AS', 'rei': generate_rei('O2'), 'tide_lock': False, 'moons': None}
 
     return planets
 
+
 # Generates an entire solar system, given a name or id. Returns a dictionary.
 def generate_solar_system(number):
-    system = {'systemtype': generate_type_system(), 'name': number, 'primary': None, 'secondary': None, 'distance': None}
+    system = {'systemtype': generate_type_system(), 'name': number, 'primary': None, 'binary': None, 'distance': None}
 
     if system['systemtype'] == 'Binary Star System':
         startype = generate_type_star()
         system['distance'] = generate_distance_binary()
 
-        system['secondary'] = {'startype': startype, 'planets': generate_list_planets(startype, system['distance'])}
+        system['binary'] = {'startype': startype, 'planets': generate_list_planets(startype, system['distance'])}
 
     else:
-        del system['secondary']
+        del system['binary']
 
     if system['systemtype'] in ['Unary Star System','Binary Star System']:
         startype = generate_type_star()
 
-        system['secondary'] = {'startype': startype, 'planets': generate_list_planets(startype, system['distance'])}
+        system['primary'] = {'startype': startype, 'planets': generate_list_planets(startype, system['distance'])}
 
         del system['distance']
     else:
@@ -280,4 +287,78 @@ def calculate_gpv(pu, hi, rei, iu, tl):
     return result
 
 
-print(generate_solar_system('00'))
+def dump_system(system):
+    print(system['name'])
+
+    if system['systemtype'] in ['Unary Star System','Binary Star System']:
+        print('Primary Component Type\t'+system['primary']['startype'])
+    else:
+        print('Primary Component Type\t'+system['systemtype'])
+
+    if system['systemtype'] == 'Binary Star System':
+        print('Binary Component Type\t'+system['binary']['startype'])
+        print('Binary Component Dist\t'+system['distance'])
+
+    if system['primary']['planets'] != None:
+        for p in range(0, len(system['primary']['planets'])):
+            planet = system['primary']['planets'][p]
+
+            print('Planet '+ str(p+1)+ '\t\t'+ str(planet['orbit'])+ '\t'+ str(planet['bearing'])+ '\t'+ str(planet['type'])+ '\t\t\t\t\t'+ str(planet['rei']))
+            
+            if planet['moons'] != None:
+                for m in range(0, len(planet['moons'])):
+                    moon = planet['moons'][m]
+
+                    print('\t'+ 'Moon '+ str(m+1)+ '\t'+ str(moon['orbit'])+ '\t'+ str(moon['bearing'])+ '\t'+ moon['type']+ '\t\t\t\t\t'+ moon['rei'])
+    print('\t')
+
+    if system['systemtype'] == 'Binary Star System':
+        for p in range(0, len(system['binary']['planets'])):
+            planet = system['binary']['planets'][p]
+
+            print('Planet '+ str(p+1)+ '\t\t'+ str(planet['orbit'])+ '\t'+ str(planet['bearing'])+ '\t'+ str(planet['type'])+ '\t\t\t\t\t'+ str(planet['rei']))
+            
+            if planet['moons'] != None:
+                for m in range(0, len(planet['moons'])):
+                    moon = planet['moons'][m]
+
+                    print('\t'+ 'Moon '+ str(m+1)+ '\t'+ str(moon['orbit'])+ '\t'+ str(moon['bearing'])+ '\t'+ moon['type']+ '\t\t\t\t\t'+ moon['rei'])
+
+
+def shipyard(ship, tl, typ = 'ship'):
+    with open('data\modules.json') as f:
+        data = json.loads(f.read())
+
+    ht_index = {'preind': 0.3, 'ind1': 0.6, 'ind2': 0.9, 'ht1': 1.1, 'ht2': 1.2, 'ht3': 1.3, 'ht4': 1.4, 'ht5': 1.5, 'ht6': 1.6, 'ht7': 1.7, 'ht8': 1.8, 'ht9': 1.9, 'ht10': 2.0, 'ht11': 2.1, 'ht12': 2.2, 'ht13': 2.3, 'ht14': 2.4, 'ht15': 2.5, 'ht16': 2.6, 'ht17': 2.7, 'ht18': 2.8, 'ht19': 2.9}
+    ships = data['ships']
+    carriers = data['carriers']
+    bases = data['bases']
+    modules = data['modules']
+
+    if typ == 'base':
+        sizes = carriers
+    elif typ == 'carrier':
+        sizes = carriers
+    else:
+        sizes = ships
+
+    cost = 0
+    hs = 0
+
+    for module in ship:
+        cost += modules[module]['cost']
+        hs += modules[module]['space']
+
+        if ht_index[modules[module]['tl']] > ht_index[tl]:
+            print('Module '+ module +' is of a higher tech level than available.')
+
+    for size in sizes:
+        if hs >= sizes[size]['min'] and hs <= sizes[size]['max']:
+            cost += math.ceil(hs) * sizes[size]['cost']
+
+            if ht_index[sizes[size]['tl']] > ht_index[tl]:
+                print('Ship size larger than allowed by tech level.')
+
+            return [hs, size, cost]
+
+    return [hs, cost]
