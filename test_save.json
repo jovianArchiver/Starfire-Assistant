@@ -1,0 +1,842 @@
+{
+	"systems":[
+		{
+			"systemtype": "Unary Star System",
+			"primary": {
+				"startype": "Orange Star",
+				"planets": [
+					{
+						"orbit": 3,
+						"bearing": 4,
+						"type": "T",
+						"rei": "Normal",
+						"tide_lock": false,
+						"hi": 5,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "Normal"
+							}
+						]
+					},
+					{
+						"orbit": 7,
+						"bearing": 2,
+						"type": "O2",
+						"rei": "Normal",
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 5,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "Normal"
+							}
+						]
+					},
+					{
+						"orbit": 11,
+						"bearing": 11,
+						"type": "G",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 2,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 3,
+								"bearing": 2,
+								"type": "O2",
+								"rei": "Normal"
+							}
+						]
+					},
+					{
+						"orbit": 19,
+						"bearing": false,
+						"type": "AS",
+						"rei": "Normal",
+						"tide_lock": false,
+						"moons": false
+					},
+					{
+						"orbit": 35,
+						"bearing": 5,
+						"type": "G",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 5,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "V.Poor"
+							},
+							{
+								"orbit": 8,
+								"bearing": 5,
+								"type": "O2",
+								"rei": "Normal"
+							}
+						]
+					},
+					{
+						"orbit": 67,
+						"bearing": 7,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 5,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 3,
+								"bearing": 1,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 4,
+								"bearing": 5,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 5,
+								"bearing": 5,
+								"type": "O1",
+								"rei": "Normal"
+							}
+						]
+					},
+					{
+						"orbit": 131,
+						"bearing": 6,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 3,
+								"bearing": 1,
+								"type": "O1",
+								"rei": "Rich"
+							},
+							{
+								"orbit": 5,
+								"bearing": 4,
+								"type": "O1",
+								"rei": "Normal"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"systemtype": "Unary Star System",
+			"primary": {
+				"startype": "Yellow Star",
+				"planets": [
+					{
+						"orbit": 4,
+						"bearing": 4,
+						"type": "V",
+						"rei": false,
+						"tide_lock": false,
+						"moons": false
+					},
+					{
+						"orbit": 7,
+						"bearing": 11,
+						"type": "T",
+						"rei": "V.Poor",
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 3,
+								"bearing": 3,
+								"type": "O2",
+								"rei": "Poor"
+							}
+						]
+					},
+					{
+						"orbit": 10,
+						"bearing": 6,
+						"type": "T",
+						"rei": "Normal",
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 1,
+								"type": "O2",
+								"rei": "Rich"
+							}
+						]
+					},
+					{
+						"orbit": 16,
+						"bearing": 5,
+						"type": "O2",
+						"rei": "V.Poor",
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 6,
+								"type": "O2",
+								"rei": "V.Poor"
+							}
+						]
+					},
+					{
+						"orbit": 28,
+						"bearing": false,
+						"type": "AS",
+						"rei": "V.Poor",
+						"tide_lock": false,
+						"moons": false
+					},
+					{
+						"orbit": 52,
+						"bearing": 4,
+						"type": "G",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 5,
+								"type": "O2",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 6,
+								"bearing": 5,
+								"type": "O2",
+								"rei": "V.Poor"
+							},
+							{
+								"orbit": 9,
+								"bearing": 3,
+								"type": "O2",
+								"rei": "Poor"
+							}
+						]
+					},
+					{
+						"orbit": 100,
+						"bearing": 11,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 4,
+								"type": "O1",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 2,
+								"bearing": 4,
+								"type": "O1",
+								"rei": "Rich"
+							},
+							{
+								"orbit": 3,
+								"bearing": 3,
+								"type": "O1",
+								"rei": "Rich"
+							},
+							{
+								"orbit": 4,
+								"bearing": 4,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 5,
+								"bearing": 3,
+								"type": "O1",
+								"rei": "Normal"
+							}
+						]
+					},
+					{
+						"orbit": 196,
+						"bearing": 5,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 4,
+								"type": "O1",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 3,
+								"bearing": 6,
+								"type": "O1",
+								"rei": "V.Rich"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"systemtype": "Unary Star System",
+			"primary": {
+				"startype": "Red Dwarf",
+				"planets": [
+					{
+						"orbit": 3,
+						"bearing": 12,
+						"type": "O2",
+						"rei": "Normal",
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 3,
+								"type": "O2",
+								"rei": "Poor"
+							},
+							{
+								"orbit": 5,
+								"bearing": 5,
+								"type": "O2",
+								"rei": "V.Rich"
+							}
+						]
+					},
+					{
+						"orbit": 7,
+						"bearing": false,
+						"type": "AS",
+						"rei": "V.Poor",
+						"tide_lock": false,
+						"moons": false
+					},
+					{
+						"orbit": 11,
+						"bearing": 4,
+						"type": "G",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 4,
+								"bearing": 1,
+								"type": "O2",
+								"rei": "Poor"
+							},
+							{
+								"orbit": 6,
+								"bearing": 6,
+								"type": "O2",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 7,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 8,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "Poor"
+							}
+						]
+					},
+					{
+						"orbit": 19,
+						"bearing": 1,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 4,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 2,
+								"bearing": 6,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 3,
+								"bearing": 2,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 4,
+								"bearing": 6,
+								"type": "O1",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 5,
+								"bearing": 6,
+								"type": "O1",
+								"rei": "V.Rich"
+							}
+						]
+					},
+					{
+						"orbit": 35,
+						"bearing": 10,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 3,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 2,
+								"bearing": 2,
+								"type": "O1",
+								"rei": "Normal"
+							}
+						]
+					},
+					{
+						"orbit": 67,
+						"bearing": 8,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 1,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 2,
+								"bearing": 1,
+								"type": "O1",
+								"rei": "V.Rich"
+							}
+						]
+					},
+					{
+						"orbit": 131,
+						"bearing": 4,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 5,
+								"type": "O1",
+								"rei": "V.Rich"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"systemtype": "Unary Star System",
+			"primary": {
+				"startype": "Orange Star",
+				"planets": [
+					{
+						"orbit": 8,
+						"bearing": 8,
+						"type": "O2",
+						"rei": "Rich",
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 4,
+								"bearing": 5,
+								"type": "O2",
+								"rei": "Rich"
+							}
+						]
+					},
+					{
+						"orbit": 10,
+						"bearing": 10,
+						"type": "G",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 6,
+								"type": "O2",
+								"rei": "Poor"
+							},
+							{
+								"orbit": 3,
+								"bearing": 1,
+								"type": "O2",
+								"rei": "Poor"
+							},
+							{
+								"orbit": 4,
+								"bearing": 3,
+								"type": "O2",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 6,
+								"bearing": 2,
+								"type": "O2",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 10,
+								"bearing": 6,
+								"type": "O2",
+								"rei": "V.Poor"
+							}
+						]
+					},
+					{
+						"orbit": 12,
+						"bearing": 4,
+						"type": "G",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 2,
+								"bearing": 2,
+								"type": "O2",
+								"rei": "Rich"
+							},
+							{
+								"orbit": 3,
+								"bearing": 6,
+								"type": "O2",
+								"rei": "V.Poor"
+							},
+							{
+								"orbit": 9,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "Rich"
+							}
+						]
+					},
+					{
+						"orbit": 16,
+						"bearing": false,
+						"type": "AS",
+						"rei": "Normal",
+						"tide_lock": false,
+						"moons": false
+					},
+					{
+						"orbit": 24,
+						"bearing": 12,
+						"type": "G",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 2,
+								"bearing": 1,
+								"type": "O2",
+								"rei": "Rich"
+							},
+							{
+								"orbit": 6,
+								"bearing": 4,
+								"type": "O2",
+								"rei": "Normal"
+							}
+						]
+					},
+					{
+						"orbit": 40,
+						"bearing": 9,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 4,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 2,
+								"bearing": 3,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 3,
+								"bearing": 6,
+								"type": "O1",
+								"rei": "V.Rich"
+							}
+						]
+					},
+					{
+						"orbit": 72,
+						"bearing": 3,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 2,
+								"bearing": 1,
+								"type": "O1",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 3,
+								"bearing": 3,
+								"type": "O1",
+								"rei": "Rich"
+							},
+							{
+								"orbit": 5,
+								"bearing": 4,
+								"type": "O1",
+								"rei": "V.Rich"
+							}
+						]
+					},
+					{
+						"orbit": 136,
+						"bearing": 7,
+						"type": "I",
+						"rei": false,
+						"tide_lock": false,
+						"moons": [
+							{
+								"orbit": 1,
+								"bearing": 1,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 2,
+								"bearing": 1,
+								"type": "O1",
+								"rei": "Rich"
+							},
+							{
+								"orbit": 3,
+								"bearing": 6,
+								"type": "O1",
+								"rei": "V.Rich"
+							},
+							{
+								"orbit": 4,
+								"bearing": 2,
+								"type": "O1",
+								"rei": "Normal"
+							},
+							{
+								"orbit": 5,
+								"bearing": 6,
+								"type": "O1",
+								"rei": "V.Rich"
+							}
+						]
+					}
+				]
+			}
+		}
+	],
+	"nprs":[
+		{
+			"name_long": "Jovian Empire",
+			"name_short": "Jovia",
+			"name_adjective": "Jovian",
+			"prefix": "JSN",
+			"attributes":{
+				"rm": 0,
+				"rd": 0,
+				"rc": 0,
+				"native_hi": 5
+			},
+			"explored_systems":[
+				{
+					"system_name": "Jove",
+					"planets": [
+						{
+							"name": "Jovia",
+							"explored": true,
+							"moons": [
+								{
+									"name": "Eye in the Sky",
+									"explored": true
+								}
+							]
+						},
+						{
+							"name": false,
+							"explored": false,
+							"population": false,
+							"moons": [
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								}
+							]
+						},
+						{
+							"name": false,
+							"explored": false,
+							"population": false,
+							"moons": [
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								},
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								}
+							]
+						},
+						{
+							"name": false,
+							"explored": false,
+							"population": false,
+							"moons": false
+						},
+						{
+							"name": false,
+							"explored": false,
+							"population": false,
+							"moons": [
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								},
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								}
+							]
+						},
+						{
+							"name": false,
+							"explored": false,
+							"population": false,
+							"moons": [
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								},
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								},
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								},
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								}
+							]
+						},
+						{
+							"name": false,
+							"explored": false,
+							"population": false,
+							"moons": [
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								},
+								{
+									"name": false,
+									"explored": false,
+									"population": false
+								}
+							]
+						}
+					]
+				},
+				false,
+				false,
+				false
+			],
+			"populations": [
+				{
+					"system_id": 0,
+					"planet_id": 0,
+					"moon": false,
+					"pu": 2000,
+					"iu": 75,
+					"hab": "Benign",
+					"gpv": 0
+				},
+				{
+					"system_id": 0,
+					"planet_id": 0,
+					"moon": 0,
+					"pu": 100,
+					"iu": 25,
+					"hab": "Desolate",
+					"gpv": 0
+				}
+			],
+			"units": [
+
+			],
+			"fleets": [
+
+			]
+		}
+	]
+}

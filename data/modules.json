@@ -1,5 +1,5 @@
 {
-	"ships":{
+	"hull_ship":{
 		"EX":{
 			"tl": "ht1",
 			"min": 5.0,
@@ -11,25 +11,29 @@
 			"tl": "ht1",
 			"min": 8.0,
 			"max": 12.0,
-			"cost": 2.0
+			"cost": 2.0,
+			"turn": 2
 		},
 		"CT":{
 			"tl": "ht1",
 			"min": 13.0,
 			"max": 16.0,
-			"cost": 2.5
+			"cost": 2.5,
+			"turn": 2
 		},
 		"FG":{
 			"tl": "ht1",
 			"min": 17.0,
 			"max": 20.0,
-			"cost": 3.0
+			"cost": 3.0,
+			"turn": 2
 		},
 		"DD":{
 			"tl": "ht1",
 			"min": 21.0,
 			"max": 30.0,
-			"cost": 4.0
+			"cost": 4.0,
+			"turn": 3
 		},
 		"CL":{
 			"tl": "ht2",
@@ -98,7 +102,7 @@
 			"cost": 24.0
 		}
 	},
-	"carriers":{
+	"hull_carrier":{
 		"CVE":{
 			"tl": "ht1",
 			"min": 21.0,
@@ -136,7 +140,7 @@
 			"cost": 12.0
 		}
 	},
-	"bases":{
+	"hull_station":{
 		"BS1":{
 			"tl": "ht1",
 			"min": 16.0,
@@ -198,231 +202,231 @@
 			"cost": 10.0
 		}
 	},
-	"modules":{
-			"A":{
-				"tl":"ind2",
-				"cost": 2.0,
-				"space": 1.0
-			},
-			"Kb":{
-				"tl":"ind2",
-				"cost": 20.0,
-				"space": 5.0
-			},
-			"B":{
-				"tl":"ind2",
-				"cost": 2.0,
-				"space": 1.0
-			},
-			"H":{
-				"tl":"ind2",
-				"cost": 1.0,
-				"space": 1.0
-			},
-			"Hs":{
-				"tl":"ind2",
-				"cost": 1.0,
-				"space": 0.5
-			},
-			"Q":{
-				"tl":"ind2",
-				"cost": 5.0,
-				"space": 1.0
-			},
-			"Qs":{
-				"tl":"ind2",
-				"cost": 15.0,
-				"space": 1.0
-			},
-			"G":{
-				"tl":"ind2",
-				"cost": 5.0,
-				"space": 3.0
-			},
-			"L":{
-				"tl":"ind2",
-				"cost": 20.0,
-				"space": 4.0
-			},
-			"Lh":{
-				"tl":"ind2",
-				"cost": 20.0,
-				"space": 1.0
-			},
-			"Mg":{
-				"tl":"ind2",
-				"cost": 10.0,
-				"space": 1.0
-			},
-			"R":{
-				"tl":"ind2",
-				"cost": 10.0,
-				"space": 3.0
-			},
-			"SP":{
-				"tl":"ind2",
-				"cost": 5.0,
-				"space": 30.0
-			},
-			"BbS":{
-				"tl":"ht1",
-				"cost": 10.0,
-				"space": 1.0
-			},
-			"BbM":{
-				"tl":"ht1",
-				"cost": 15.0,
-				"space": 2.0
-			},
-			"BbL":{
-				"tl":"ht1",
-				"cost": 10.0,
-				"space": 3.0
-			},
-			"CHS":{
-				"tl":"ht1",
-				"cost": 100.0,
-				"space": 15.0
-			},
-			"CIC":{
-				"tl":"ht1",
-				"cost": 50.0,
-				"space": 4.0
-			},
-			"I":{
-				"tl":"ht1",
-				"cost": 5.0,
-				"space": 1.0
-			},
-			"i":{
-				"tl":"ht1",
-				"cost": 3.0,
-				"space": 0.5
-			},
-			"Ic":{
-				"tl":"ht1",
-				"cost": 4.0,
-				"space": 2.0
-			},
-			"ic":{
-				"tl":"ht1",
-				"cost": 3.0,
-				"space": 1.0
-			},
-			"J":{
-				"tl":"ht1",
-				"cost": 10.0,
-				"space": 1.0
-			},
-			"j":{
-				"tl":"ht1",
-				"cost": 5.0,
-				"space": 0.5
-			},
-			"Jc1":{
-				"tl":"ht1",
-				"cost": 10.0,
-				"space": 2.0
-			},
-			"jc1":{
-				"tl":"ht1",
-				"cost": 5.0,
-				"space": 1.0
-			},
-			"@":{
-				"tl":"ht1",
-				"cost": 20.0,
-				"space": 2.0
-			},
-			"X":{
-				"tl":"ht1",
-				"cost": 50.0,
-				"space": 1.0
-			},
-			"S":{
-				"tl":"ht1",
-				"cost": 4.0,
-				"space": 1.0
-			},
-			"SYx":{
-				"tl":"ht1",
-				"cost": 400.0,
-				"space": 80.0
-			},
-			"SYMx":{
-				"tl":"ht1",
-				"cost": 150.0,
-				"space": 25.0
-			},
-			"W":{
-				"tl":"ht2",
-				"cost": 20.0,
-				"space": 3.0
-			},
-			"Ki":{
-				"tl":"ht2",
-				"cost": 30.0,
-				"space": 5.0
-			},
-			"Db":{
-				"tl":"ht2",
-				"cost": 15.0,
-				"space": 2.0
-			},
-			"M1":{
-				"tl":"ht2",
-				"cost": 10.0,
-				"space": 1.0
-			},
-			"CC":{
-				"tl":"ht2",
-				"cost": 100.0,
-				"space": 5.0
-			},
-			"Z":{
-				"tl":"ht3",
-				"cost": 40.0,
-				"space": 0.0
-			},
-			"Je3":{
-				"tl":"ht3",
-				"cost": 40.0,
-				"space": 1.0
-			},
-			"DCS":{
-				"tl":"ht3",
-				"cost": 100.0,
-				"space": 8.0
-			},
-			"Dk5":{
-				"tl":"ht3",
-				"cost": 15.0,
-				"space": 3.0
-			},
-			"Xr":{
-				"tl":"ht3",
-				"cost": 0.0,
-				"space": 0.0
-			},
-			"MSx":{
-				"tl":"ht3",
-				"cost": 100.0,
-				"space": 25.0
-			},
-			"Rp":{
-				"tl":"ht3",
-				"cost": 0.0,
-				"space": 0.0
-			},
-			"D":{
-				"tl":"ht3",
-				"cost": 0.0,
-				"space": 0.0
-			},
-			"T":{
-				"tl":"ht3",
-				"cost": 0.0,
-				"space": 0.0
-			}
+"modules":{
+		"A":{
+			"tl":"ind2",
+			"cost": 2.0,
+			"hs": 1.0
+		},
+		"Kb":{
+			"tl":"ind2",
+			"cost": 20.0,
+			"hs": 5.0
+		},
+		"B":{
+			"tl":"ind2",
+			"cost": 2.0,
+			"hs": 1.0
+		},
+		"H":{
+			"tl":"ind2",
+			"cost": 1.0,
+			"hs": 1.0
+		},
+		"Hs":{
+			"tl":"ind2",
+			"cost": 1.0,
+			"hs": 0.5
+		},
+		"Q":{
+			"tl":"ind2",
+			"cost": 5.0,
+			"hs": 1.0
+		},
+		"Qs":{
+			"tl":"ind2",
+			"cost": 15.0,
+			"hs": 1.0
+		},
+		"G":{
+			"tl":"ind2",
+			"cost": 5.0,
+			"hs": 3.0
+		},
+		"L":{
+			"tl":"ind2",
+			"cost": 20.0,
+			"hs": 4.0
+		},
+		"Lh":{
+			"tl":"ind2",
+			"cost": 20.0,
+			"hs": 1.0
+		},
+		"Mg":{
+			"tl":"ind2",
+			"cost": 10.0,
+			"hs": 1.0
+		},
+		"R":{
+			"tl":"ind2",
+			"cost": 10.0,
+			"hs": 3.0
+		},
+		"SP":{
+			"tl":"ind2",
+			"cost": 5.0,
+			"hs": 30.0
+		},
+		"BbS":{
+			"tl":"ht1",
+			"cost": 10.0,
+			"hs": 1.0
+		},
+		"BbM":{
+			"tl":"ht1",
+			"cost": 15.0,
+			"hs": 2.0
+		},
+		"BbL":{
+			"tl":"ht1",
+			"cost": 10.0,
+			"hs": 3.0
+		},
+		"CHS":{
+			"tl":"ht1",
+			"cost": 100.0,
+			"hs": 15.0
+		},
+		"CIC":{
+			"tl":"ht1",
+			"cost": 50.0,
+			"hs": 4.0
+		},
+		"I":{
+			"tl":"ht1",
+			"cost": 5.0,
+			"hs": 1.0
+		},
+		"i":{
+			"tl":"ht1",
+			"cost": 3.0,
+			"hs": 0.5
+		},
+		"Ic":{
+			"tl":"ht1",
+			"cost": 4.0,
+			"hs": 2.0
+		},
+		"ic":{
+			"tl":"ht1",
+			"cost": 3.0,
+			"hs": 1.0
+		},
+		"J":{
+			"tl":"ht1",
+			"cost": 10.0,
+			"hs": 1.0
+		},
+		"j":{
+			"tl":"ht1",
+			"cost": 5.0,
+			"hs": 0.5
+		},
+		"Jc1":{
+			"tl":"ht1",
+			"cost": 10.0,
+			"hs": 2.0
+		},
+		"jc1":{
+			"tl":"ht1",
+			"cost": 5.0,
+			"hs": 1.0
+		},
+		"@":{
+			"tl":"ht1",
+			"cost": 20.0,
+			"hs": 2.0
+		},
+		"X":{
+			"tl":"ht1",
+			"cost": 50.0,
+			"hs": 1.0
+		},
+		"S":{
+			"tl":"ht1",
+			"cost": 4.0,
+			"hs": 1.0
+		},
+		"SYx":{
+			"tl":"ht1",
+			"cost": 400.0,
+			"hs": 80.0
+		},
+		"SYMx":{
+			"tl":"ht1",
+			"cost": 150.0,
+			"hs": 25.0
+		},
+		"W":{
+			"tl":"ht2",
+			"cost": 20.0,
+			"hs": 3.0
+		},
+		"Ki":{
+			"tl":"ht2",
+			"cost": 30.0,
+			"hs": 5.0
+		},
+		"Db":{
+			"tl":"ht2",
+			"cost": 15.0,
+			"hs": 2.0
+		},
+		"M1":{
+			"tl":"ht2",
+			"cost": 10.0,
+			"hs": 1.0
+		},
+		"CC":{
+			"tl":"ht2",
+			"cost": 100.0,
+			"hs": 5.0
+		},
+		"Z":{
+			"tl":"ht3",
+			"cost": 40.0,
+			"hs": 0.0
+		},
+		"Je3":{
+			"tl":"ht3",
+			"cost": 40.0,
+			"hs": 1.0
+		},
+		"DCS":{
+			"tl":"ht3",
+			"cost": 100.0,
+			"hs": 8.0
+		},
+		"Dk5":{
+			"tl":"ht3",
+			"cost": 15.0,
+			"hs": 3.0
+		},
+		"Xr":{
+			"tl":"ht3",
+			"cost": 0.0,
+			"hs": 0.0
+		},
+		"MSx":{
+			"tl":"ht3",
+			"cost": 100.0,
+			"hs": 25.0
+		},
+		"Rp":{
+			"tl":"ht3",
+			"cost": 0.0,
+			"hs": 0.0
+		},
+		"D":{
+			"tl":"ht3",
+			"cost": 0.0,
+			"hs": 0.0
+		},
+		"T":{
+			"tl":"ht3",
+			"cost": 0.0,
+			"hs": 0.0
+		}
 	}
 }
